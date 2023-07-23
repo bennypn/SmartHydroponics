@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "294462450976",
+    "firebase_url": "https://monitoring-hydroponics-default-rtdb.firebaseio.com",
+    "project_id": "monitoring-hydroponics",
+    "storage_bucket": "monitoring-hydroponics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294462450976:android:286a52a21a2c43d63abb45",
+        "android_client_info": {
+          "package_name": "com.example.smarthydroponics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294462450976-o8nneam8jao9vuqm7supka9svb4398nl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBTZT9qandKtgPGP-jkGUTIt1oiZhq1gw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294462450976-o8nneam8jao9vuqm7supka9svb4398nl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

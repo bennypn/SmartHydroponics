@@ -4,20 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/plant_heights"
-    tools:context=".PlantHeights">
+    android:background="@drawable/water_temperature"
+    tools:context=".WaterTempHistory">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="296dp"
-        android:layout_height="144dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22" />
     <ImageButton
-        android:id="@+id/btn_information9"
+        android:id="@+id/btn_information7"
         android:layout_width="50sp"
         android:layout_height="50sp"
         android:layout_marginStart="50dp"
@@ -33,7 +24,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
-        android:id="@+id/btn_home9"
+        android:id="@+id/btn_home7"
         android:layout_width="50sp"
         android:layout_height="50sp"
         android:layout_marginBottom="16dp"
@@ -47,7 +38,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
-        android:id="@+id/btn_profile9"
+        android:id="@+id/btn_profile7"
         android:layout_width="50sp"
         android:layout_height="50sp"
         android:layout_marginEnd="50dp"
@@ -63,7 +54,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn_back9"
+        android:id="@+id/btn_back7"
         android:layout_width="54dp"
         android:layout_height="91dp"
         android:layout_marginStart="4dp"
@@ -75,24 +66,25 @@
         app:layout_constraintVertical_bias="0.063" />
 
     <ScrollView
-        android:layout_width="304dp"
-        android:layout_height="345dp"
+        android:layout_width="328dp"
+        android:layout_height="351dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.602"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74">
+        app:layout_constraintVertical_bias="0.678">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rc9"
+                android:id="@+id/rc7"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

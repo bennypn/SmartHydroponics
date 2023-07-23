@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton btnInfo = findViewById(R.id.btn_information);
         ImageButton btnCam = findViewById(R.id.btn_camera);
 
-        TextView waterPump = findViewById(R.id.txt_water_temp);
+        TextView waterTemp = findViewById(R.id.txt_water_temp);
         TextView phLevel = findViewById(R.id.txt_ph_level);
         TextView plantNut = findViewById(R.id.txt_plant_nut);
 
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 String pl = snapshot.child("phLevel").getValue(Integer.class).toString();
                 String pn = snapshot.child("plantNutrition").getValue(Integer.class).toString();
 
-                waterPump.setText(wt);
+                waterTemp.setText(wt);
                 phLevel.setText(pl);
                 plantNut.setText(pn);
             }
@@ -91,6 +91,40 @@ public class MainActivity extends AppCompatActivity {
                 overridePendingTransition(0, 0);
             }
         });
-        //endregion "Toolbar"
+
+        plantNut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent;
+                intent = new Intent(MainActivity.this,
+                        PlantNutHistory.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+            }
+        });
+
+        waterTemp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent;
+                intent = new Intent(MainActivity.this,
+                        WaterTempHistory.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+            }
+        });
+
+        phLevel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent;
+                intent = new Intent(MainActivity.this,
+                        PhLevelHistory.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+            }
+        });
+
+        //endregion
     }
 }
