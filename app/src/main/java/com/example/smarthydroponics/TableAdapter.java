@@ -34,6 +34,7 @@ public class TableAdapter extends RecyclerView.Adapter<TableAdapter.TableViewHol
         String dateTimeString = convertUnixTimeToDateTime(tableItem.getUnixTime());
         holder.unixTimeTextView.setText(dateTimeString);
         holder.valueTextView.setText(String.valueOf(tableItem.getValue()));
+        holder.keterangan.setText(String.valueOf(tableItem.getKeterangan()));
 
     }
 
@@ -53,7 +54,7 @@ public class TableAdapter extends RecyclerView.Adapter<TableAdapter.TableViewHol
         Date date = new Date(unixTime * 1000);
 
         // Format yang ingin Anda gunakan untuk dateTime (misalnya "dd/MM/yyyy HH:mm:ss")
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault());
 
         // Mengonversi Date menjadi string dalam format yang diinginkan
         return sdf.format(date);
@@ -63,10 +64,12 @@ public class TableAdapter extends RecyclerView.Adapter<TableAdapter.TableViewHol
         public TextView unixTimeTextView;
         public TextView valueTextView;
 
+        public TextView keterangan;
         public TableViewHolder(@NonNull View itemView) {
             super(itemView);
             unixTimeTextView = itemView.findViewById(R.id.unixTimeTextView);
             valueTextView = itemView.findViewById(R.id.valueTextView);
+            keterangan = itemView.findViewById(R.id.keterangan);
         }
     }
 }
