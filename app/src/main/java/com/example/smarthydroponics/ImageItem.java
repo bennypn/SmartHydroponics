@@ -3,10 +3,8 @@ package com.example.smarthydroponics;
 public class ImageItem {
     private String value;
     private long unixTime;
-
     public ImageItem() {
     }
-
     public String getValue() {
         return value;
     }

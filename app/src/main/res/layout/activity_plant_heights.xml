@@ -60,7 +60,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"  />
 
     <Button
         android:id="@+id/btn_back9"
@@ -68,7 +68,7 @@
         android:layout_height="91dp"
         android:layout_marginStart="4dp"
         android:text="Button"
-        android:visibility="invisible"
+        android:alpha="0.0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
